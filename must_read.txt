@@ -1,0 +1,19 @@
+# hamming_code_using_behavioural_Style_with_topmodule
+
+so this program consists topmodule also and it works on nexas4 board
+
+and i have selected while performing this experiment as follows
+family:artix-7
+board:xca100tg324-1
+
+i have dumped the program into the board through vivado
+so in vivado you have to create constraint file(.XDC) for performing on fpga board
+
+here i am providing xdc file ,so you have to just paste it
+
+output:it will work on seven segment displays,so each seven segment led will be turned on accoring to the on board leds value(leds value from 0-6(in binary) ,these values will show on those leds)
+
+first two switches are for eanbling the data-->hammingcode and hammingcode->op_corrected_code(0,1)
+next 4 switches for data(2,3,4,5)
+next 7 switches for input hammingcode(6,7,8,9,10,11,12)
+next switch is for enabling the hammingcode and op_correctedcode(13)
